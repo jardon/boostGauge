@@ -2,7 +2,16 @@
 Arduino boost gauge using an Adafruit NeoPixel.
 
 ## Overview
-This is a personal project at making a 52mm boost gauge for a forced induction engine.  Ring Matrix is a library that I created to manage the neopixel meter.  It is a derivative of a circular array that is designed to hold all of the values of each LED.  In terms of color, I thought that green would be good to use for positive pressure while blue is used to indicate vaccum.  The driver tiles red into the color to indicate that the array has wrapped around itself.  For a more readable value, the center display should be used.  The gauge will flash red all the way around if the boost pressure has exceeded the max set.
+This is a personal project at making a 52mm boost gauge for a forced induction engine.  Ring Matrix is a library that I created to manage the neopixel meter.  It is a derivative of a circular array that is designed to hold all of the values of each LED.  
+
+## Reading the display
+- Green: Indicates postive pressure
+- Blue: Indicates vaccume
+- Red (flashing): Sensor indicates that the pressure is higher than max
+
+The driver tiles red into the color to indicate that the array has wrapped around itself.
+
+**Note: For a more readable value, the center display should be used. **
 
 ## Issues
 - I dont like the boundaries that it has mostly because of the lack of predictability without having a specific sensor set aside
