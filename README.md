@@ -11,7 +11,7 @@ This is a personal project at making a 52mm boost gauge for a forced induction e
 
 The driver tiles red into the color to indicate that the array has wrapped around itself.
 
-**Note: For a more readable value, the center display should be used. **
+**Note: For a more readable value, the center display should be used.**
 
 ## Issues
 - I dont like the boundaries that it has mostly because of the lack of predictability without having a specific sensor set aside
