@@ -17,6 +17,7 @@ The driver tiles red into the color to indicate that the array has wrapped aroun
 - I dont like the boundaries that it has mostly because of the lack of predictability without having a specific sensor set aside
 - The methodology for how the array is moved needs to be re-evaluated
 - I'm bad at blender. There needs to be a gauge face made. Maybe someone could make something better?
+- I'm still bad at blender.  The walls of the casing are a little on the thin side.  Would help to be thickened up a hair
 - Don't have a center display picked out.  Could do two seven segment displays that fit PERFECT but then theres dealing with resister arrays with a not that flexible display
 
 ## Components
