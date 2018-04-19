@@ -54,9 +54,8 @@ public:
 
 private:
     int position;
-    int previous;
     int size;
-    int matrix [16];
+    int* matrix;
     void increase();
     void decrease();
     void moveLeft();
