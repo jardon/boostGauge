@@ -22,8 +22,8 @@
 ringMatrix::ringMatrix(int elements)
 {
     size = elements;
+    matrix = new int [size];
     position = 0;
-    previous = 0;
 
     for(int i = 0; i < size; i++)
         matrix[i] = 10000;
