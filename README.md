@@ -27,10 +27,17 @@ The driver tiles red into the color to indicate that the array has wrapped aroun
 - Pressure Sensor (3 bar)
 - Access to a 3D printer
 
+## To do
+- [ ] Make wiring diagrams
+- [ ] Clean up the code
+- [ ] Git gud at blender
+- [ ] Make useful how to guide
+- [ ] Actually finish this
+
 ## How to
 1. Wire it up
 1. Clone the repo
 1. Make adjustments to fit your application
 1. Upload software to Ardruino
-  
-**_A better How to will come eventually_** 
+
+**_A better How to will come eventually_**
