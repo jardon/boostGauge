@@ -27,7 +27,7 @@ void updateAll()
     blue = 255;
     green = 0;
   }
-  
+
   for(int i = 0; i < NUM_LEDS; i++)
   {
     if(ring.getValue(i) < 9999)
@@ -58,23 +58,19 @@ void alert()
   for(int j = 0; j < 4; j++)
   {
     for(int i = 0; i < NUM_LEDS; i++)
-    {
       strip.setPixelColor(i, 0, 0, 0);
-    }
     strip.show();
     delay(100);
-  
+
     for(int i = 0; i < NUM_LEDS; i++)
-    {
       strip.setPixelColor(i, 255, 0, 0);
-    }
     strip.show();
     delay(100);
   }
-  
+
 }
 
-void setup() 
+void setup()
 {
   // put your setup code here, to run once:
   strip.begin();
@@ -85,7 +81,7 @@ void setup()
   change = 255 / modifier;
 }
 
-void loop() 
+void loop()
 {
   // put your main code here, to run repeatedly:
 /*
@@ -107,7 +103,7 @@ void loop()
 
   alert();
 */
-  
-  
+
+
 
 }

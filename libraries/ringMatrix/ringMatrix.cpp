@@ -26,9 +26,7 @@ ringMatrix::ringMatrix(int elements)
     previous = 0;
 
     for(int i = 0; i < size; i++)
-    {
         matrix[i] = 10000;
-    }
 }
 
 void ringMatrix::increase()
@@ -39,9 +37,7 @@ void ringMatrix::increase()
         matrix[position] = matrix[lookRight()] + 1;
     }
     else if(matrix[position] == 10000)
-    {
         matrix[position] = 1;
-    }
     else if(matrix[position] == -1)
     {
         matrix[position] = 10000;
@@ -56,8 +52,6 @@ void ringMatrix::increase()
         else
             matrix[lookRight()] = 10000;
     }
-
-    previous++;
 }
 
 void ringMatrix::decrease()
@@ -68,9 +62,7 @@ void ringMatrix::decrease()
         matrix[position] = matrix[lookLeft()]  - 1;
     }
     else if(matrix[position] == 10000)
-    {
         matrix[position] = -1;
-    }
     else if(matrix[position] == 1)
     {
         matrix[position] = 10000;
@@ -85,9 +77,6 @@ void ringMatrix::decrease()
         else
             matrix[lookLeft()] = 10000;
     }
-
-    previous--;
-
 }
 
 inline int ringMatrix::getSize()
@@ -98,9 +87,9 @@ inline int ringMatrix::getPosition()
 
 void ringMatrix::moveTo(int value)
 {
-    while(value != previous)
+    while(value != matrix[position])
     {
-        if(value > previous)
+        if(value > matrix[position])
             increase();
         else
             decrease();
@@ -146,11 +135,9 @@ int ringMatrix::getValue(int location)
 void ringMatrix::print()
 {
     for(int i = 0; i < size; i++)
-    {
         cout << "[" << i << "]: " <<  matrix[i] << endl;
-    }
 }
-
+/*
 int main()
 {
     char input;
@@ -178,5 +165,5 @@ int main()
             }
 
         }
-    }
+    }*/
 }
